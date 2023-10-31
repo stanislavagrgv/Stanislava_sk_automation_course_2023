@@ -9,7 +9,7 @@ public class Homework_06 {
 
         // displayMiddleCharacter("toyota");
         // System.out.print("The number is even: " + isEven(2545));
-        System.out.println(isNumberPalindrome(54145));
+        isNumberPalindrome();
     }
 
     public static void displayMiddleCharacter (String value) {
@@ -32,7 +32,7 @@ public class Homework_06 {
         return result;
     }
 
-    public static boolean isNumberPalindrome(int number){
+    public static boolean checkForPalindrome(int number){
 
         boolean result;
         int temp = Math.abs(number);
@@ -48,6 +48,24 @@ public class Homework_06 {
         } else result = false;
 
         return result;
+    }
+
+    public static void isNumberPalindrome() {
+
+        int numberToCheck;
+
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter a non-negative number: ");
+        numberToCheck = scanner.nextInt();
+
+        if (numberToCheck < 0) {
+            System.out.println("You have entered a negative number!");
+        } else if (checkForPalindrome(numberToCheck)) {
+            System.out.println("The number is a palindrome.");
+        } else {
+            System.out.println("The number is not a palindrome.");
+        }
+
     }
 
 }
