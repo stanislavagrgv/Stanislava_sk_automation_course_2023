@@ -1,0 +1,38 @@
+Login page
+http://training.skillo-bg.com:4200/users/login
+
+#defaultLoginFormUsername -> "Username or email" input field
+
+#defaultLoginFormPassword -> "Password" input field
+
+[formcontrolname=rememberMe] -> Remember me checkbox
+
+#sign-in-button -> Sign in button
+
+a[href*=register] -> Link to Register form
+
+----------
+Register page
+http://training.skillo-bg.com:4200/users/register
+
+[formcontrolname="username"] -> "Username" input field
+
+[formcontrolname="email"] -> "Email" input field
+
+[formcontrolname="password"] -> "Password" input field
+
+[formcontrolname="confirmPassword"] -> "Confirm password" input field
+
+#"sign-in-button" -> Sign in button
+
+-----------
+Home page
+
+http://training.skillo-bg.com:4200/posts/all
+
+
+.navbar-toggler -> Navigation bar
+
+#nav-link-home -> Home menu
+
+#nav-link-login -> Login menu

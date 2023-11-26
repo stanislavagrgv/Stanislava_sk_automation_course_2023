@@ -1,0 +1,47 @@
+Login page
+http://training.skillo-bg.com:4200/users/login
+
+//p[contains(text(), "Sign in")] -> Sign in form title "Sign in"
+
+//*[@id="defaultLoginFormUsername"] -> "Username or email" input field
+
+//*[@id="defaultLoginFormPassword"] -> "Password" input field
+
+//*[@[formcontrolname="rememberMe"]] -> Remember me checkbox
+
+//span[contains(text(), "Remember me")] - > label of checkbox "Remember me"
+
+//*[@id="sign-in-button"] -> Sign in button
+
+//span[contains(text(), "Not a member")] -> "Not a member" text
+
+//a[contains(text(), "Register")] -> Link to Register form
+
+----------
+Register page
+http://training.skillo-bg.com:4200/users/register
+
+//h4[contains(text(), "Sign up")] -> Register form title "Sign up"
+
+//input[@formcontrolname="username"] -> "Username" input field
+
+//input[@formcontrolname="email"] -> "Email" input field
+
+//input[@formcontrolname="password"] -> "Password" input field
+
+//input[@formcontrolname="confirmPassword"] -> "Confirm password" input field
+
+//*[@id="sign-in-button"] -> Sign in button
+
+//div[contains(text(), "Registration failed")] -> Warning which appears on registration failure
+
+-----------
+Home page
+
+http://training.skillo-bg.com:4200/posts/all
+
+//button[@class="navbar-toggler"] -> Navigation bar
+
+//a[@id="nav-link-home"] -> Home menu
+
+//a[@id="nav-link-login"] -> Login menu
