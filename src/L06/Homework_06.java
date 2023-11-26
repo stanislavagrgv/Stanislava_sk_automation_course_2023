@@ -35,7 +35,7 @@ public class Homework_06 {
     public static boolean checkForPalindrome(int number){
 
         boolean result;
-        int temp = Math.abs(number);
+        int temp = number;
         int newNumber = temp % 10;
 
         while (temp > 10 ){
