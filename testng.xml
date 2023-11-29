@@ -1,0 +1,10 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="Test profile suite" verbose="1">
+    <test name="Profile">
+        <classes>
+            <class name="TestProfile" />
+            <class name="TestProfileWIthDataProviders" />
+        </classes>
+    </test>
+</suite>

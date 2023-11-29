@@ -22,16 +22,7 @@
                     <artifactId>maven-compiler-plugin</artifactId>
                     <version>3.8.1</version>
                 </plugin>
-                <plugin>
-                    <groupId>org.apache.maven.plugins</groupId>
-                    <artifactId>maven-surefire-plugin</artifactId>
-                    <version>3.0.0-M7</version>
-                    <configuration>
-                        <suiteXmlFiles>
-                            <suiteXmlFile>lecture10-exercises.xml</suiteXmlFile>
-                        </suiteXmlFiles>
-                    </configuration>
-                </plugin>
+
             </plugins>
         </pluginManagement>
     </build>
@@ -54,6 +45,12 @@
             <groupId>io.github.bonigarcia</groupId>
             <artifactId>webdrivermanager</artifactId>
             <version>5.6.2</version>
+        </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>RELEASE</version>
+            <scope>compile</scope>
         </dependency>
 
     </dependencies>

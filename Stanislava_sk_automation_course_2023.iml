@@ -4,6 +4,8 @@
     <content url="file://$MODULE_DIR$" dumb="true">
       <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/test" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/src/test/java/L10" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/src/test/java/L14-self-training" isTestSource="true" />
     </content>
   </component>
 </module>
