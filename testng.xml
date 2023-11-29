@@ -5,6 +5,7 @@
         <classes>
             <class name="TestProfile" />
             <class name="TestProfileWIthDataProviders" />
+            <class name="L15.Homework_15" />
         </classes>
     </test>
 </suite>
