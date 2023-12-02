@@ -1,0 +1,62 @@
+before all tests:
+ 0. Login the app
+	0.1 http://training.skillo-bg.com:4300/users/login
+	0.2 username
+	0.3 password
+	0.4 Sign in
+-----------------------------------------------------------------------
+
+case 1: Create a private post
+
+1. Check if logged in: http://training.skillo-bg.com:4300/posts/all
+
+2. Click on "Profile" to open User profile page
+
+3. Check if on Profile page: http://training.skillo-bg.com:4300/users/5068
+
+4. Click on "New post"
+
+5. Check if Create post page is loaded
+url = http://training.skillo-bg.com:4300/posts/create
+
+6. Fill in post form:
+	6.1 Upload photo -> cardinal-1884283_640.jpg
+	6.2 Enter post caption -> "Cardinal post caption"
+	6.3 Check public/private checkbox and click for private if needed
+
+7. Click "Create post" button
+
+8. Check url = http://training.skillo-bg.com:4300/users/5068
+
+9. Select "Private" posts filter - COULD NOT PUT IN TEST
+
+10. Check if created post is there - COULD NOT PUT IN TEST
+
+-----------------------------------------------------------------------
+
+case 2: Follow a user
+
+
+ 1. Check if Home page loaded
+ //div[@class="col-12 offset-md-3 col-md-6 all-users-container"]
+
+ 2. Find user and click on
+ //a[contains(text(), "TestUserUserUserUser")]
+
+ 3. Check button "Follow/Unfollow"
+ //button[@class="btn btn-primary profile-edit-btn ng-star-inserted"]
+
+ 	4.1 If "Unfollow" -> print message user is already followed
+ 	4.2 Else "Follow" -> Click on and continue steps
+
+ 4. Open own User Profile
+ id = nav-link-profile
+
+ 5. Check if own User profile is loaded
+ //h2[contains(text(), "stanig1\
+
+ 6. Click on "following"
+ id = following
+
+ 7. Check if followed user is available
+ //a[contains(text(), "TestUserUserUserUser")]
