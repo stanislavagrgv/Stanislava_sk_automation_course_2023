@@ -4,8 +4,8 @@
     <test name="Profile">
         <classes>
             <class name="TestProfile" />
-            <class name="TestProfileWIthDataProviders" />
             <class name="L15.Homework_15" />
+            <class name = "L16.ProfileTests" />
         </classes>
     </test>
 </suite>
